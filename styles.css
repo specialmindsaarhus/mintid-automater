@@ -1,0 +1,11 @@
+body {
+  transition: background-color 0.25s ease-in;
+}
+
+table.noprint {
+  padding-bottom: 13.333px;
+}
+
+ul.two_line_menu {
+  margin-top: 0px;
+}

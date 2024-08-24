@@ -1,0 +1,24 @@
+{
+  "name": "Mintid Automater",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "icons": {
+    "16": "logoHvid.png",
+    "32": "logoHvid.png",
+    "48": "logoHvid.png",
+    "128": "logoHvid.png"
+  },
+  "description": "Automatise mintid",
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://mintid.specialminds.dk/*"],
+      "css": ["styles.css"],
+      "js": ["script.js"]
+    }
+  ]
+}
